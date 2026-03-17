@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+	int a;
+	scanf("%d", &a);
+	if (a < 0)
+		printf("cold, indoor");
+	if (0 <= a && a < 40)
+		printf("moderate, outdoor");
+	if (a>=40)
+		printf("hot, indoor");
+
+
+	/* Type or paste your code in this area */
+
+	return 0;
+}
