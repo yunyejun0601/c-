@@ -10,7 +10,6 @@ int main(){
 	if (a>=40)
 		printf("hot, indoor");
 
-
 	/* Type or paste your code in this area */
 
 	return 0;
