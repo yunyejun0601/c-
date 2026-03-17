@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;   // 정답
+    int x, y, z;   // 추측
+    int strike = 0, ball = 0;
+
+    // 입력
+    scanf("%d %d %d", &a, &b, &c);
+    scanf("%d %d %d", &x, &y, &z);
+
+    // 스트라이크 검사
+    if (a == x) strike++;
+    if (b == y) strike++;
+    if (c == z) strike++;
+
+    // 볼 검사
+    // x 기준
+    if (x == b || x == c) ball++;
+    // y 기준
+    if (y == a || y == c) ball++;
+    // z 기준
+    if (z == a || z == b) ball++;
+
+    printf("%dS%dB", strike, ball);
+
+    return 0;
+}
