@@ -1,0 +1,14 @@
+# c-
+튜터링 c프 코드 공유 
+#include <stdio.h>
+int main() {
+	int a;
+	scanf("%d", &a);
+	int ttho = a / 10000;
+	int tho = a / 1000%10;
+	int hun = a / 100%10;
+	int ten = a / 10%10;
+	int num = a % 10;
+	printf("%dTTHO %dTHO %dHUN %dTEN %d", ttho, tho, hun, ten, num);
+  return 0;
+}
