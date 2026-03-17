@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main(){
+int N, M;
+scanf("%d", &N);
+scanf("%d", &M);
+switch(N){
+    case 1:
+        printf("Americano");
+        M -= 500;
+	    printf("%d %d", M / 500, ((M % 500) / 100));
+	    break;
+	case 2:
+	    printf("Cafe Latte");
+        M -= 400;
+        printf("%d %d", M / 500, ((M % 500) / 100));
+        break;
+    case 3:
+    	printf("Lemon Tea");
+        M -= 300;
+    	printf("%d %d", M / 500, ((M % 500) / 100));
+    	break;
+    default:
+        break;
+    
+}
+	/* Type or paste your code in this area */
+
+	return 0;
+}
