@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(){
+    int N,M;
+    scanf("%d\t%d",&N,&M);
+    int a= N>M ? N/M:M/N;
+    int b= N>M ? N%M:M%N;
+    printf("%d\n%d",a,b);
+	/* Type or paste your code in this area */
+
+	return 0;
+}
