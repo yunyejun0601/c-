@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    int N;
+    scanf("%d", &N);
+    int a;
+    a = (20<=N && N<=30);
+    printf("%d",a);
+    
+    
+
+	/* Type or paste your code in this area */
+
+	return 0;
+}
