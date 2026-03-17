@@ -6,6 +6,5 @@ int main(){
     n%2 == 0 ? printf("even"):printf("odd");
     
 	/* Type or paste your code in this area */
-
 	return 0;
 }
