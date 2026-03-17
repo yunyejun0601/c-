@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    float a;              
+    scanf("%f", &a);
+    float r = a/(2*3.14);
+    float s = 3.14*(r*r);
+    int S = round(s);
+    printf("%d",S);
+
+	/* Type or paste your code in this area */
+
+	return 0;
+}
