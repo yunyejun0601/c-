@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+int main() {
+    char a;
+    int b;
+    char c;
+    scanf("%c",&a);
+    scanf("%d", &b);
+    if (a >= 'A' && a <= 'Z') {
+        if (a + b >= 'A' && a + b <= 'Z') {
+            printf("%c",a + b);
+        }
+        else {
+            for (int i = 1;i <= b;i++) {
+                a = a + 1;
+                if (a > 'Z') {
+                    a = 'A';
+                }
+            }
+            printf("%c", a);
+        }
+    }
+    else if (a >= 'a' && a <= 'z') {
+        if (a + b >= 'a' && a + b <= 'z') {
+            printf("%c",a + b);
+        }
+        else {
+            for (int i = 1;i <= b;i++) {
+                a = a + 1;
+                if (a > 'z') {
+                    a = 'a';
+                }
+            }
+            printf("%c", a);
+        }
+    }
+    else printf("%c", a);
+
+    /* Type or paste your code in this area */
+
+    return 0;
+}
